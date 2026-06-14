@@ -168,13 +168,6 @@ Designed for Vercel deployment with:
 - **Preview**: PR/feature branch deployments
 - **Production**: Main branch deployments
 
-Required environment variables:
-```
-CONTENTFUL_SPACE_ID
-CONTENTFUL_DELIVERY_TOKEN
-CONTENTFUL_PREVIEW_TOKEN
-```
-
 ## ⚠️ Known Limitations
 
 1. **Mock Data**: Currently uses mock Contentful data. Swap `mockAdapter.ts` for real Contentful client when credentials are available.
