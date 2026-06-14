@@ -1,0 +1,20 @@
+.unsupported {
+  padding: var(--space-8);
+  margin: var(--space-4) auto;
+  max-width: 800px;
+  background: var(--color-warning-bg);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+.icon { font-size: var(--text-3xl); margin-bottom: var(--space-3); }
+.title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-warning);
+  margin-bottom: var(--space-2);
+}
+.message {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
