@@ -1,10 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const API_BASE =
-  process.env.BACKEND_API_URL ||
-  process.env.API_URL ||
-  process.env.NEXT_PUBLIC_API_URL ||
-  "http://localhost:8000/api";
+const getApiBaseUrl = (): string => {
+  let url =
+    process.env.BACKEND_API_URL ||
+    process.env.API_URL ||
+    process.env.NEXT_PUBLIC_API_URL ||
+    "http://localhost:8000/api";
+  url = url.trim();
+  if (url && !url.startsWith("http://") && !url.startsWith("https://")) {
+    url = `https://${url}`;
+  }
+  return url;
+};
+
+const API_BASE = getApiBaseUrl();
 
 export async function POST(req: NextRequest) {
   try {
