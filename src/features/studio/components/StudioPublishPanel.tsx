@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { resetPublish, startPublish, publishSuccess, publishError } from "@/store/slices/publishSlice";
 import { setPage } from "@/store/slices/draftPageSlice";

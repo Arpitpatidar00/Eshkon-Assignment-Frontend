@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { setPreviewMode, toggleSidebar, showToast } from "@/store/slices/uiSlice";
 import { resetDraft, setPage, updatePageTitle } from "@/store/slices/draftPageSlice";

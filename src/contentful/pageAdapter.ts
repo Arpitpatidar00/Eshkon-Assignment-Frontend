@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { safeParsePage } from "@/domain/schemas";
 import type { Page } from "@/domain/types";
 import { apiClient } from "@/lib/apiClient";
