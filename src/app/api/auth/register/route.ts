@@ -10,6 +10,12 @@ const getApiBaseUrl = (): string => {
   if (url && !url.startsWith("http://") && !url.startsWith("https://")) {
     url = `https://${url}`;
   }
+  while (url.endsWith("/")) {
+    url = url.slice(0, -1);
+  }
+  if (url && !url.endsWith("/api")) {
+    url = `${url}/api`;
+  }
   return url;
 };
 
